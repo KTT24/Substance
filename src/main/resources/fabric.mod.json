@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "substance",
+  "version": "${version}",
+  "name": "Substance",
+  "description": "Substance API for all my mods",
+  "authors": [
+    "Kutter"
+  ],
+  "contact": {
+    "repo": "https://github.com/KTT24/Substance"
+  },
+  "license": "MIT",
+  "icon": "assets/substance/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.substance.client.SubstanceClient"
+    ],
+    "main": [
+      "com.substance.Substance"
+    ]
+  },
+  "mixins": [
+    "substance.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
